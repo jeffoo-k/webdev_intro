@@ -8,12 +8,12 @@
   </head>
   <body>
     <header class="site-header">
-      <img src="assets/shared/logo.png" alt="Logo" width="150" />
+      <img src="assets/shared/logo.png" alt="Book Haven Bookstore logo" width="150" />
       <h1 class="site-title">Book Haven Gallery</h1>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
           <li><a href="about.html">About/Contact</a></li>
           <li><a href="community.html">Community</a></li>
         </ul>
@@ -23,7 +23,7 @@
     <main class="gallery-main">
       <h2 class="page-title">Our Products</h2>
       <button class="btn-cart">View cart</button>
-      <table class="product-grid" border="1">
+      <table class="product-grid" role="presentation">
         <tr>
           <td class="product-cell">
             <img
@@ -31,7 +31,7 @@
               alt="Book 1"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Book 1 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
             <img
@@ -39,7 +39,7 @@
               alt="Book 2"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Book 2 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
             <img
@@ -47,7 +47,7 @@
               alt="Book 3"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Book 3 to cart">Add to Cart</button>
           </td>
         </tr>
         <tr>
@@ -57,7 +57,7 @@
               alt="Magazine 1"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Magazine 1 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
             <img
@@ -65,7 +65,7 @@
               alt="Magazine 2"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Magazine 2 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
             <img
@@ -73,7 +73,7 @@
               alt="Magazine 3"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Magazine 3 to cart">Add to Cart</button>
           </td>
         </tr>
         <tr>
@@ -83,7 +83,7 @@
               alt="Tote Bag"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Tote Bag to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
             <img
@@ -91,15 +91,15 @@
               alt="Notebook"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Notebook to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
             <img
               src="assets/gallery/stickers.png"
-              alt="Sticker"
+              alt="Stickers"
               width="200"
             /><br />
-            <button class="btn-add">Add to Cart</button>
+            <button class="btn-add" aria-label="Add Stickers to cart">Add to Cart</button>
           </td>
         </tr>
       </table>

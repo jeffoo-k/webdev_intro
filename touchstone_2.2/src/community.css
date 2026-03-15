@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   color: #131C26;
   background-color: #FFF7EE;
@@ -34,7 +34,7 @@ img {
 /* ===== Header ===== */
 .site-header {
   background-color: #fff;
-  border-bottom: 2px solid #e0d6ca;
+  border-bottom: 2px solid #C7B65E;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ img {
 }
 
 .site-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #2E4057;
@@ -61,7 +61,7 @@ img {
 }
 
 .nav-list a {
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #2E4057;
@@ -71,7 +71,6 @@ img {
 }
 
 .nav-list a:hover {
-  background-color: #e0d6ca;
   color: #EE583F;
   text-decoration: none;
 }
@@ -89,7 +88,7 @@ img {
 }
 
 .testimonials .section-title-lg {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #2E4057;
@@ -98,7 +97,7 @@ img {
 }
 
 .testimonials .section-subtitle {
-  font-family: Comfortaa, cursive;
+  font-family: Comfortaa, sans-serif;
   font-size: 15px;
   color: #C7B65E;
   text-align: center;
@@ -110,7 +109,7 @@ img {
   border-radius: 16px;
   padding: 2rem 2rem 1.5rem;
   margin-bottom: 1.25rem;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 20px;
   font-style: italic;
   color: #2E4057;
@@ -127,7 +126,7 @@ img {
 .review-card em {
   display: inline-block;
   margin-top: 0.75rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 11px;
   font-weight: bold;
   font-style: normal;
@@ -149,7 +148,7 @@ img {
 }
 
 .events .section-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   font-weight: bold;
   color: #2E4057;
@@ -202,7 +201,7 @@ img {
 }
 
 .footer-subscribe h3 {
-  font-family: Comfortaa, cursive;
+  font-family: Comfortaa, sans-serif;
   font-size: 15px;
   margin-bottom: 0.5rem;
 }
@@ -218,7 +217,7 @@ img {
   border: none;
   border-radius: 5px;
   outline: none;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   width: 250px;
   color: #131C26;
@@ -229,7 +228,7 @@ img {
   color: #FFF7EE;
   border: none;
   padding: 0.5rem 1.2rem;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
@@ -238,16 +237,17 @@ img {
 }
 
 .subscribe-form button:hover {
-  background-color: #d94a33;
+  background-color: #2E4057;
 }
 
 .footer-socials {
   margin-bottom: 0.75rem;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .footer-socials strong {
-  font-family: Comfortaa, cursive;
+  font-family: Comfortaa, sans-serif;
+  font-size: 15px;
   font-weight: normal;
   margin-right: 0.25rem;
 }
@@ -262,7 +262,7 @@ img {
 
 .footer-copy {
   margin-top: 0.75rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 11px;
   font-weight: bold;
   opacity: 0.8;
@@ -280,7 +280,7 @@ img {
   }
 
   .site-title {
-    font-size: 16px;
+    font-size: 25px;
   }
 
   .nav-list {
@@ -288,7 +288,9 @@ img {
   }
 
   .nav-list a {
+    font-family: Arial, sans-serif;
     font-size: 11px;
+    font-weight: bold;
     padding: 0.25rem 0.5rem;
   }
 

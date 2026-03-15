@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   color: #131C26;
   background-color: #FFF7EE;
@@ -34,7 +34,7 @@ img {
 /* ===== Header ===== */
 .site-header {
   background-color: #fff;
-  border-bottom: 2px solid #e0d6ca;
+  border-bottom: 2px solid #C7B65E;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ img {
 }
 
 .site-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #2E4057;
@@ -61,7 +61,7 @@ img {
 }
 
 .nav-list a {
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #2E4057;
@@ -71,7 +71,6 @@ img {
 }
 
 .nav-list a:hover {
-  background-color: #e0d6ca;
   color: #EE583F;
   text-decoration: none;
 }
@@ -89,7 +88,7 @@ img {
 }
 
 .section-title-lg {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #2E4057;
@@ -97,7 +96,7 @@ img {
 }
 
 .story-text {
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 20px;
   color: #131C26;
 }
@@ -105,14 +104,14 @@ img {
 /* ===== Hours ===== */
 .hours {
   background: #fff;
-  border: 1px solid #e0d6ca;
+  border: 1px solid #C7B65E;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
 }
 
 .hours .section-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   font-weight: bold;
   color: #2E4057;
@@ -120,7 +119,7 @@ img {
 }
 
 .hours strong {
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-weight: bold;
   color: #2E4057;
 }
@@ -128,13 +127,13 @@ img {
 /* ===== Feedback Form ===== */
 .feedback-form {
   background: #fff;
-  border: 1px solid #e0d6ca;
+  border: 1px solid #C7B65E;
   border-radius: 8px;
   padding: 2rem;
 }
 
 .feedback-form .section-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   font-weight: bold;
   color: #2E4057;
@@ -143,7 +142,7 @@ img {
 
 .feedback-form label {
   display: block;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #2E4057;
@@ -161,9 +160,9 @@ img {
 .feedback-form textarea {
   width: 100%;
   padding: 0.6rem 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #C7B65E;
   border-radius: 5px;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   background: #FFF7EE;
   transition: border-color 0.2s;
@@ -192,7 +191,7 @@ img {
   color: #FFF7EE;
   border: none;
   padding: 0.7rem 2rem;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   border-radius: 6px;
@@ -201,7 +200,7 @@ img {
 }
 
 .btn-submit:hover {
-  background-color: #d94a33;
+  background-color: #2E4057;
 }
 
 /* ===== Footer ===== */
@@ -218,7 +217,7 @@ img {
 }
 
 .footer-subscribe h3 {
-  font-family: Comfortaa, cursive;
+  font-family: Comfortaa, sans-serif;
   font-size: 15px;
   margin-bottom: 0.5rem;
 }
@@ -234,7 +233,7 @@ img {
   border: none;
   border-radius: 5px;
   outline: none;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   width: 250px;
   color: #131C26;
@@ -245,7 +244,7 @@ img {
   color: #FFF7EE;
   border: none;
   padding: 0.5rem 1.2rem;
-  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
@@ -254,16 +253,17 @@ img {
 }
 
 .subscribe-form button:hover {
-  background-color: #d94a33;
+  background-color: #2E4057;
 }
 
 .footer-socials {
   margin-bottom: 0.75rem;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .footer-socials strong {
-  font-family: Comfortaa, cursive;
+  font-family: Comfortaa, sans-serif;
+  font-size: 15px;
   font-weight: normal;
   margin-right: 0.25rem;
 }
@@ -278,7 +278,7 @@ img {
 
 .footer-copy {
   margin-top: 0.75rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 11px;
   font-weight: bold;
   opacity: 0.8;
@@ -296,7 +296,7 @@ img {
   }
 
   .site-title {
-    font-size: 16px;
+    font-size: 25px;
   }
 
   .nav-list {
@@ -304,7 +304,9 @@ img {
   }
 
   .nav-list a {
+    font-family: Arial, sans-serif;
     font-size: 11px;
+    font-weight: bold;
     padding: 0.25rem 0.5rem;
   }
 
