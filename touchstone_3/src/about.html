@@ -85,7 +85,27 @@
 
       document.querySelector(".feedback-form form").addEventListener("submit", function (e) {
         e.preventDefault();
-        alert("Thank you for your message.");
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const requestType = document.getElementById("request_type").value;
+        const message = document.getElementById("message").value;
+
+        const orderInfo = {
+          name: name,
+          email: email,
+          requestType: requestType,
+          message: message,
+          date: new Date().toISOString()
+        };
+
+        // Save to localStorage
+        const orders = JSON.parse(localStorage.getItem("customOrders")) || [];
+        orders.push(orderInfo);
+        localStorage.setItem("customOrders", JSON.stringify(orders));
+
+        alert("Thank you for your message. Your information has been saved.");
+        this.reset();
       });
     </script>
   </body>

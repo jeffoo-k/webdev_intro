@@ -139,6 +139,14 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.product-name {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2E4057;
+  margin: 0.25rem 0 0.5rem;
+}
+
 .btn-add {
   background-color: #EE583F;
   color: #FFF7EE;
@@ -236,6 +244,114 @@ img {
   font-size: 11px;
   font-weight: bold;
   opacity: 0.8;
+}
+
+/* ===== Clear & Order Buttons ===== */
+.btn-clear,
+.btn-order {
+  display: inline-block;
+  margin: 0 0.5rem 1.5rem 0;
+  background-color: #2E4057;
+  color: #FFF7EE;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-clear:hover,
+.btn-order:hover {
+  background-color: #EE583F;
+}
+
+/* ===== Cart Modal ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #FFF7EE;
+  border: 2px solid #C7B65E;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-content h3 {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: #2E4057;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #C7B65E;
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  color: #131C26;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.modal-buttons .btn-clear,
+.modal-buttons .btn-order {
+  margin: 0;
+}
+
+.cart-qty {
+  font-weight: bold;
+  color: #EE583F;
+  margin-left: 0.25rem;
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E4057;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.btn-close-modal:hover {
+  color: #EE583F;
 }
 
 /* ===== Mobile ===== */

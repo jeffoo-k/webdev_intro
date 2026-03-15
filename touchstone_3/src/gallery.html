@@ -23,8 +23,6 @@
     <main class="gallery-main">
       <h2 class="page-title">Our Products</h2>
       <button class="btn-cart">View cart</button>
-      <button class="btn-clear">Clear Cart</button>
-      <button class="btn-order">Process Order</button>
       <table class="product-grid" role="presentation">
         <tr>
           <td class="product-cell">
@@ -33,6 +31,7 @@
               alt="Book 1"
               width="200"
             /><br />
+            <p class="product-name">Book 1</p>
             <button class="btn-add" aria-label="Add Book 1 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
@@ -41,6 +40,7 @@
               alt="Book 2"
               width="200"
             /><br />
+            <p class="product-name">Book 2</p>
             <button class="btn-add" aria-label="Add Book 2 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
@@ -49,6 +49,7 @@
               alt="Book 3"
               width="200"
             /><br />
+            <p class="product-name">Book 3</p>
             <button class="btn-add" aria-label="Add Book 3 to cart">Add to Cart</button>
           </td>
         </tr>
@@ -59,6 +60,7 @@
               alt="Magazine 1"
               width="200"
             /><br />
+            <p class="product-name">Magazine 1</p>
             <button class="btn-add" aria-label="Add Magazine 1 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
@@ -67,6 +69,7 @@
               alt="Magazine 2"
               width="200"
             /><br />
+            <p class="product-name">Magazine 2</p>
             <button class="btn-add" aria-label="Add Magazine 2 to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
@@ -75,6 +78,7 @@
               alt="Magazine 3"
               width="200"
             /><br />
+            <p class="product-name">Magazine 3</p>
             <button class="btn-add" aria-label="Add Magazine 3 to cart">Add to Cart</button>
           </td>
         </tr>
@@ -85,6 +89,7 @@
               alt="Tote Bag"
               width="200"
             /><br />
+            <p class="product-name">Tote Bag</p>
             <button class="btn-add" aria-label="Add Tote Bag to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
@@ -93,6 +98,7 @@
               alt="Notebook"
               width="200"
             /><br />
+            <p class="product-name">Notebook</p>
             <button class="btn-add" aria-label="Add Notebook to cart">Add to Cart</button>
           </td>
           <td class="product-cell">
@@ -101,6 +107,7 @@
               alt="Stickers"
               width="200"
             /><br />
+            <p class="product-name">Stickers</p>
             <button class="btn-add" aria-label="Add Stickers to cart">Add to Cart</button>
           </td>
         </tr>
@@ -123,25 +130,87 @@
       </p>
       <p class="footer-copy">&copy; 2026 Book Haven Bookstore</p>
     </footer>
+    <div id="cartModal" class="modal-overlay" style="display:none;">
+      <div class="modal-content">
+        <button class="btn-close-modal" id="closeModal">&times;</button>
+        <h3>Shopping Cart</h3>
+        <div id="cartItems"></div>
+        <div class="modal-buttons">
+          <button class="btn-clear">Clear Cart</button>
+          <button class="btn-order">Process Order</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       document.querySelector(".subscribe-form").addEventListener("submit", function (e) {
         e.preventDefault();
         alert("Thank you for subscribing.");
       });
 
-      var addButtons = document.querySelectorAll(".btn-add");
-      for (var i = 0; i < addButtons.length; i++) {
+      const addButtons = document.querySelectorAll(".btn-add");
+      for (let i = 0; i < addButtons.length; i++) {
         addButtons[i].addEventListener("click", function () {
-          alert("Item added to the cart.");
+          const img = this.parentElement.querySelector("img");
+          const itemName = img.alt;
+          const itemImage = img.src;
+
+          let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+          let found = false;
+          for (let j = 0; j < cart.length; j++) {
+            if (cart[j].name === itemName) {
+              cart[j].quantity += 1;
+              found = true;
+              break;
+            }
+          }
+          if (!found) {
+            cart.push({ name: itemName, image: itemImage, quantity: 1 });
+          }
+          sessionStorage.setItem("cart", JSON.stringify(cart));
+
+          alert(itemName + " added to the cart.");
         });
       }
 
+      document.querySelector(".btn-cart").addEventListener("click", function () {
+        const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+        const cartItemsDiv = document.getElementById("cartItems");
+        cartItemsDiv.innerHTML = "";
+
+        if (cart.length === 0) {
+          cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+        } else {
+          for (let i = 0; i < cart.length; i++) {
+            const item = document.createElement("div");
+            item.className = "cart-item";
+            item.innerHTML = "<img src='" + cart[i].image + "' alt='" + cart[i].name + "' width='60' /> " + cart[i].name + " <span class='cart-qty'>x" + cart[i].quantity + "</span>";
+            cartItemsDiv.appendChild(item);
+          }
+        }
+
+        document.getElementById("cartModal").style.display = "flex";
+      });
+
+      document.getElementById("closeModal").addEventListener("click", function () {
+        document.getElementById("cartModal").style.display = "none";
+      });
+
       document.querySelector(".btn-clear").addEventListener("click", function () {
+        sessionStorage.clear();
+        document.getElementById("cartModal").style.display = "none";
         alert("Cart cleared.");
       });
 
       document.querySelector(".btn-order").addEventListener("click", function () {
-        alert("Thank you for your order.");
+        const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+        if (cart.length === 0) {
+          alert("Your cart is empty.");
+        } else {
+          sessionStorage.clear();
+          document.getElementById("cartModal").style.display = "none";
+          alert("Thank you for your order.");
+        }
       });
     </script>
   </body>
