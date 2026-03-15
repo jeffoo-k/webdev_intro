@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="assets/shared/logo.png" alt="Book Haven Bookstore logo" width="150" />
+      <h1 class="site-title">Contact & Feedback</h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html" aria-current="page">About/Contact</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-main">
+      <section class="our-story">
+        <h2 class="section-title-lg">Our story</h2>
+        <p class="story-text">
+          Serving our community of knowledge seekers with high-quality reading
+          materials and office essentials.
+        </p>
+      </section>
+      <section class="hours">
+        <h2 class="section-title">Hours of Operation</h2>
+        <p>
+          <strong>Monday–Friday:</strong> 9 a.m. to 8 p.m.<br />
+          <strong>Saturday:</strong> 10 a.m. to 6 p.m.<br />
+          <strong>Sunday:</strong> 11 a.m. to 5 p.m.
+        </p>
+      </section>
+
+      <section class="feedback-form">
+        <h2 class="section-title">Feedback & Custom Orders</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="request_type">Request Type:</label><br />
+          <select id="request_type" name="request_type">
+            <option value="feedback">General Feedback</option>
+            <option value="order">Custom Book Order</option></select
+          ><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea
+          ><br /><br />
+
+          <input class="btn-submit" type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <section class="footer-subscribe">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form class="subscribe-form" action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+      <p class="footer-socials">
+        <strong>Follow Us:</strong>
+        <a href="https://facebook.com">Facebook</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://twitter.com">Twitter</a>
+      </p>
+      <p class="footer-copy">&copy; 2026 Book Haven Bookstore</p>
+    </footer>
+    <script>
+      document.querySelector(".subscribe-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for subscribing.");
+      });
+
+      document.querySelector(".feedback-form form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for your message.");
+      });
+    </script>
+  </body>
+</html>

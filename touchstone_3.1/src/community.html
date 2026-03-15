@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="community.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="assets/shared/logo.png" alt="Book Haven Bookstore logo" width="150" />
+      <h1 class="site-title">Our Community</h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About/Contact</a></li>
+          <li><a href="community.html" aria-current="page">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="community-main">
+      <section class="testimonials">
+        <h2 class="section-title-lg">Customer Testimonials</h2>
+        <p class="section-subtitle">What our community is saying</p>
+        <blockquote class="review-card">
+          "The best selection of journals in the city!" -
+          <em>Sarah Troy</em>
+        </blockquote>
+        <blockquote class="review-card">
+          "I love how they engage with our community" -
+          <em>James Heart</em>
+        </blockquote>
+      </section>
+      <section class="events">
+        <h2 class="section-title">Upcoming Local Events</h2>
+        <ul class="events-list">
+          <li class="event-item">
+            <strong>Monday Night Poetry:</strong> Every Monday at 6:00 PM.
+          </li>
+          <li class="event-item">
+            <strong>Children's Story Hour:</strong> Saturdays at 10:00 AM.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <section class="footer-subscribe">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form class="subscribe-form" action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+      <p class="footer-socials">
+        <strong>Follow Us:</strong>
+        <a href="https://facebook.com">Facebook</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://twitter.com">Twitter</a>
+      </p>
+      <p class="footer-copy">&copy; 2026 Book Haven Bookstore</p>
+    </footer>
+    <script>
+      document.querySelector(".subscribe-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for subscribing.");
+      });
+    </script>
+  </body>
+</html>
