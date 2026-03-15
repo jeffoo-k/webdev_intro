@@ -1,0 +1,388 @@
+/* ===== Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  color: #131C26;
+  background-color: #FFF7EE;
+  line-height: 1.6;
+}
+
+a {
+  color: #2E4057;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #EE583F;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background-color: #fff;
+  border-bottom: 2px solid #e0d6ca;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-header img {
+  width: 80px;
+}
+
+.site-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2E4057;
+  flex: 1;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #2E4057;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-list a:hover {
+  background-color: #e0d6ca;
+  color: #EE583F;
+  text-decoration: none;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background-color: #2E4057;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  margin: 1.5rem;
+  border-radius: 8px;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.hero-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFF7EE;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #FFF7EE;
+  opacity: 0.9;
+}
+
+/* ===== Current Promotions ===== */
+.promotions {
+  padding: 2rem 1.5rem;
+}
+
+.promotions .section-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2E4057;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.promo-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.promo-card {
+  background: #fff;
+  border: 1px solid #e0d6ca;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.promo-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.promo-card strong {
+  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #EE583F;
+}
+
+/* ===== Featured Items ===== */
+.featured {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.featured .section-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2E4057;
+  margin-bottom: 1rem;
+}
+
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.featured-card {
+  background: #fff;
+  border: 1px solid #e0d6ca;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.featured-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.featured-card figcaption {
+  margin-top: 0.5rem;
+  font-family: Comfortaa, cursive;
+  font-size: 15px;
+  color: #2E4057;
+}
+
+/* ===== Why Choose Us ===== */
+.why-us {
+  background-color: #C7B65E;
+  border-radius: 12px;
+  margin: 1.5rem;
+  padding: 2rem;
+}
+
+.why-us .section-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2E4057;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.why-us-item {
+  margin-bottom: 1rem;
+}
+
+.why-us-item h3 {
+  font-family: Comfortaa, cursive;
+  font-size: 15px;
+  color: #2E4057;
+  margin-bottom: 0.25rem;
+}
+
+.why-us-item p {
+  color: #131C26;
+}
+
+/* ===== Mission ===== */
+.mission {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  margin: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0d6ca;
+}
+
+.mission-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2E4057;
+  margin-bottom: 0.5rem;
+}
+
+.mission-text {
+  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: #2E4057;
+  color: #FFF7EE;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-subscribe {
+  margin-bottom: 1.5rem;
+}
+
+.footer-subscribe h3 {
+  font-family: Comfortaa, cursive;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  width: 250px;
+  color: #131C26;
+}
+
+.subscribe-form button {
+  background-color: #EE583F;
+  color: #FFF7EE;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subscribe-form button:hover {
+  background-color: #d94a33;
+}
+
+.footer-socials {
+  margin-bottom: 0.75rem;
+  font-size: 15px;
+}
+
+.footer-socials strong {
+  font-family: Comfortaa, cursive;
+  font-weight: normal;
+  margin-right: 0.25rem;
+}
+
+.footer-socials a {
+  color: #C7B65E;
+}
+
+.footer-socials a:hover {
+  color: #FFF7EE;
+}
+
+.footer-copy {
+  margin-top: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0.5rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .site-header img {
+    width: 50px;
+  }
+
+  .site-title {
+    font-size: 16px;
+  }
+
+  .nav-list {
+    gap: 0.25rem;
+  }
+
+  .nav-list a {
+    font-size: 11px;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .hero {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .hero-heading {
+    font-size: 25px;
+  }
+
+  .promo-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-us {
+    margin: 1rem;
+  }
+
+  .mission {
+    margin: 1rem;
+  }
+}
